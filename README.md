@@ -44,5 +44,26 @@ For the code that generates the race of each NPC, I had the random library choos
 ## First name and Last name explained
 For the code that generates the First name of Each NPC, I made two different lists for male and female names, with each having three variations based on what race was chosen
 
+An example of how I did that using one variation in my code is below:
+
+    if gender == 0:
+ 
+        gender = "Male"
+        
+        if race == 0:
+        
+            race = "White"
+            
+            name_list_M = [ "Noah" , "Liam ", "Jacob", "Mason", "William", "Ethan", "Michael", "Alexander", "Jayden" ,
+                        "Daniel", "Elijah", "Aiden", "James", "Benjamin", "Matthew", "Jackson", "Logan", "David", "Anthony", "Joseph", "Joshua", 
+                        "Andrew", "Lucas", "Gabriel", "Samuel", "Christopher", "John", "Dylan", "Isaac", "Ryan"
+                        ]
+
+To extract a name from the list I would use the random library and then put that variable into a variable with both the female first names and male first names as seen below:
+
+    rando_name_M = random.choice(name_list_M)
+      
+    uniname = rando_name_M
+
 
 
